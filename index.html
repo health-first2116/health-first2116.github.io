@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Best Deals Here Today</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: url('shop-background-image.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: sans-serif;
+    }
+
+    .fade-section-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .fade-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60vh;
+      width: 100%;
+      max-width: 100%;
+      text-align: center;
+      
+      background: 
+        linear-gradient(to bottom, 
+          transparent 0%, 
+          rgba(170, 40, 40, 0.95) 25%, 
+          rgba(170, 40, 40, 1) 50%, 
+          rgba(170, 40, 40, 0.95) 75%, 
+          transparent 100%
+        );
+      z-index: 1;
+    }
+
+    .icon-container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .clickable-icon {
+      font-size: 100px;
+      color: #00a6eb;
+      transition: color 0.3s;
+      cursor: pointer;
+    }
+
+    .clickable-icon:hover {
+      color: #5e1212;
+    }
+  </style>
+</head>
+<body>
+  <div class="fade-section-wrapper">
+    <div class="fade-section">
+      <div class="icon-container">
+        <a href="contact/">
+          <i class="fab fa-telegram-plane clickable-icon"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
